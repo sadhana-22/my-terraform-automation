@@ -3,6 +3,5 @@ terraform {
     bucket = "young-minds-app-22"
     key = "main"
     region = "us-east-1"
-    dynamodb_table = "terraform-dynamodb"
   }
 }
