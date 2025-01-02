@@ -1,8 +1,8 @@
 resource "aws_s3_bucket" "example" {
-  bucket = "my-bucket-for-terraform"
+  bucket = "my-tf-test-bucket-2203"
 
   tags = {
-    Name        = "my-bucket-for-terraform-2203"
+    Name        = "My bucket"
     Environment = "Dev"
   }
 }
