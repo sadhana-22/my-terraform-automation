@@ -1,5 +1,6 @@
 provider "aws" {
   region = var.aws_region
+timeout = "15m"
 }
 
 resource "aws_vpc" "main" {
