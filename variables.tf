@@ -13,10 +13,9 @@ variable "instance_type" {
     default     =  "t2.micro" 
 }
 
-variable "create_security_group" {
-    description = "Set to false to skip creating a new security group if one already exists"
-    type        = bool
-    default     = true
+variable "security_group" { 
+    description = "Name of security group" 
+    default     = "jenkins-2203-sg" 
 }
 
 
