@@ -13,10 +13,12 @@ variable "instance_type" {
     default     =  "t2.micro" 
 }
 
-variable "security_group" { 
-    description = "Name of security group" 
-    default     = "jenkins-sg-2203" 
+variable "create_security_group" {
+    description = "Set to false to skip creating a new security group if one already exists"
+    type        = bool
+    default     = true
 }
+
 
 variable "tag_name" { 
     description = "Tag Name of for Ec2 instance" 
